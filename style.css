@@ -1,3 +1,9 @@
+/* CSS Variables */
+:root {
+    --bg-color: black;
+}
+
+
 body {
     background-color: black;
 }
@@ -35,4 +41,22 @@ body {
     min-height: 90vh;
     display: flex;
     align-items: center;
+}
+
+/* Player Window Settings */
+.option-list {
+    margin: 5vh;
+}
+
+.option-list ul {
+    list-style-type: none;
+    color: white;
+}
+
+.option-list li {
+    margin: 5vh
+}
+
+.option-list li a {
+    color: white;
 }

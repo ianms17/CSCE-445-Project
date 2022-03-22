@@ -1,11 +1,22 @@
 /* CSS Variables */
 :root {
+    /* Colors */
     --bg-color: black;
+    --text-color-primary: white;
+    --navbar-link-color: white;
+    --navbar-hover-color: rgba(255, 255, 255, 0.6);
+
+    /* Fonts */
+    --title-font: 'Syne Mono', monospace;
+    --text-font: 'Syne Mono', monospace;
+    --title-font-size: 5vh;
+    --text-font-size: 2.5vh;
+    --navlink-font-size: 2.5vh;
 }
 
 
 body {
-    background-color: black;
+    background-color: var(--bg-color);
 }
 
 /* Navbar Settings */
@@ -14,31 +25,38 @@ body {
 }
 
 .navbar-dark-custom {
-    background-color: black;
+    background-color: var(--bg-color);
 }
 
 .navbar-dark-custom .navbar-brand {
-    font-size: 4vh;
+    font-size: var(--title-font-size);
+    font-family: var(--title-font);
 }
 
 .navbar-dark-custom .navbar-brand,
 .navbar-dark-custom .navbar-text {
-    color: white;
+    color: var(--text-color-primary);
+    font-size: var(--title-font-size);
+    font-family: var(--title-font);
 }
 
 .navbar-dark-custom .navbar-nav .nav-link {
-    color: rgba(255,255,255,.6);
+    color: var(--navbar-link-color);
+    font-size: var(--navlink-font-size);
+    font-family: var(--text-font);
 }
 
 .navbar-dark-custom .nav-item.active .nav-link,
 .navbar-dark-custom .nav-item:hover .nav-link {
-    color: white;
+    color: var(--navbar-hover-color);
 }
 
 /* Landing Page Settings */
 .main-page {
-    color: white;
-    min-height: 90vh;
+    color: var(--text-color-primary);
+    font-family: var(--text-font);
+    font-size: var(--text-font-size);
+    min-height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -50,13 +68,15 @@ body {
 
 .option-list ul {
     list-style-type: none;
-    color: white;
+    color: var(--text-color-primary);
 }
 
 .option-list li {
-    margin: 5vh
+    margin: 5vh;
 }
 
 .option-list li a {
-    color: white;
+    color: var(--text-color-primary);
+    font-family: var(--text-font);
+    font-size: var(--text-font-size);
 }

@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+}
+
+/* Navbar Settings */
+.navbar {
+    min-height: 10vh;
+}
+
+.navbar-dark-custom {
+    background-color: black;
+}
+
+.navbar-dark-custom .navbar-brand {
+    font-size: 4vh;
+}
+
+.navbar-dark-custom .navbar-brand,
+.navbar-dark-custom .navbar-text {
+    color: white;
+}
+
+.navbar-dark-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.6);
+}
+
+.navbar-dark-custom .nav-item.active .nav-link,
+.navbar-dark-custom .nav-item:hover .nav-link {
+    color: white;
+}
+
+/* Landing Page Settings */
+.main-page {
+    color: white;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
